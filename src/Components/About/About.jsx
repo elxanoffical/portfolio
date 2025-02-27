@@ -2,8 +2,28 @@ import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import profile_img from '../../assets/profile_img.jpg'
+import { useRef, useEffect } from 'react';
 
 const About = () => {
+
+    const animatedRef = useRef(null);
+
+    useEffect(() => {
+        const aboutElement = animatedRef.current;
+
+        const handleScroll = () => {
+            const { top, bottom } = aboutElement.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (top < windowHeight && bottom > 0) {
+                aboutElement.classList.add('slideInFromRight');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    
     return (
         <div id='about' className='about'>
             <div className="about-title">

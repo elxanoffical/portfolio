@@ -4,7 +4,6 @@ import pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import loaction_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
-import { useForm } from 'react-hook-form'
 
 const Contact = () => {
 
@@ -31,7 +30,6 @@ const Contact = () => {
         }
     };
 
-    const { register, watch, handleSubmit, formState: { errers } } = useForm()
 
 
     return (
@@ -61,13 +59,13 @@ const Contact = () => {
                     <label htmlFor="">Your Name</label>
                     <input required type="text" placeholder='Enter your name' name='name' />
                     <label htmlFor="">Your Email</label>
-                    <input required type="email" placeholder='Enter your email' name='email' />
+                    <input required re type="email" placeholder='Enter your email' name='email' />
                     <label htmlFor="">Write your message here</label>
                     <textarea required name="message" rows="8" placeholder='Enter your message'></textarea>
                     <button type='submit' className='contact-submit'>Submit now</button>
                 </form>
             </div>
-        </div>
+        </div> 
     )
 }
 

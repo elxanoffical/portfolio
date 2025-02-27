@@ -5,7 +5,7 @@
     gap: 30px;
 
 }
-
+/* 
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -18,10 +18,10 @@
 
 .footer-top-left img {
     position: absolute;
-    top: 20%;
+    top: 15%;
     right: 79%;
     z-index: -1;
-    width: 50px;
+    width: 60px;
 }
 
 .footer-top-left p {
@@ -67,7 +67,7 @@
 .footer-subscribe:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
+} */
 
 
 .footer-bottom {

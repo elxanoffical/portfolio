@@ -6,11 +6,11 @@ import pattern from '../../assets/theme_pattern.svg'
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className="footer-top">
+            {/* <div className="footer-top">
                 <div className="footer-top-left">
                     <h1>Elxan</h1>
                     <img src={pattern} alt="" />
-                    <p>I am a frontend developer from , USA with 10 year of experience in  companies like Microsoft, Tesla and Apple.</p>
+                    <p>I am an advanced developer from Baku, Azerbaijan with 2 years of experience in many companies like Microsoft, Adams and Apple.</p>
                 </div>
                 <div className="footer-top-right">
                     <div className="footer-email-input">
@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-subscribe">Subscribe</div>
                 </div>
-            </div>
+            </div> */}
             <div className="liners"></div>
 
             <div className="footer-bottom">
